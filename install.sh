@@ -8,7 +8,7 @@ cp v2ctl /usr/bin/v2ray/v2ctl
 cp geoip.dat /usr/bin/v2ray/geoip.dat
 cp geosite.dat /usr/bin/v2ray/geosite.dat
 mkdir /etc/v2ray/
-cp vpoint_vmess_freedom.json /etc/v2ray/config.json
+cp v2ray_config.json /etc/v2ray/config.json
 cd ..
 rm -rf v2ray-4.26
 echo "install v2ray done"
@@ -16,7 +16,6 @@ echo "install v2ray done"
 mv v2ray /etc/init.d/v2ray
 chmod a+x /etc/init.d/v2ray
 chkconfig v2ray on
-mv v2ray_config.json /etc/v2ray/config.json
 service v2ray start
 
 #### nginx ####
