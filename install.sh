@@ -7,10 +7,10 @@ cp v2ray /usr/bin/v2ray/v2ray
 cp v2ctl /usr/bin/v2ray/v2ctl
 cp geoip.dat /usr/bin/v2ray/geoip.dat
 cp geosite.dat /usr/bin/v2ray/geosite.dat
-mkdir /etc/v2ray/
-cp v2ray_config.json /etc/v2ray/config.json
 cd ..
 rm -rf v2ray-4.26
+mkdir /etc/v2ray/
+cp v2ray_config.json /etc/v2ray/config.json
 echo "install v2ray done"
 
 mv v2ray /etc/init.d/v2ray
